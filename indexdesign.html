@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        
+            margin: 0px;
+            padding: 0px;
+            left: 4px;
+            position: relative;
+            border-radius: 1px;
+
+            
+        }
+        .parent{
+            gap: 1px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            top: 30px;
+            border: 0px solid;
+            height: 850px;
+            width: 1440px;
+            left: 220px;
+            justify-content: space-around;
+        
+        }
+      
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            left: 4px;
+            position: fixed;
+            background-image: url('../media/bg-desktop.svg');
+            height: 850px;
+            width: 1440px;
+            filter: brightness(10px 10px 2px violet);
+            
+             
+             }
+        .h2{
+                width: 300px;
+                line-height: 30px;
+             }
+    
+        h2,p{
+            border: 0px solid ;
+            margin: 1px;
+            text-align:left;
+            padding: 10px;
+            width: 500px;
+            
+
+        }
+        p{
+            font-size: 20px;
+        }
+        .button{
+            left: 10px;
+            border-radius: 40px;
+            padding: 10px;
+            width: 160px;
+            height: 50px;
+           background-color: white;
+        }
+        #img{
+            border-radius: 20px;
+            width: 60px;
+        }
+      .child1{
+        margin: 40px;
+        padding: 10px;
+        top: 30px;
+        left: -100px;
+        flex-basis: 20%;
+      }
+       .child2{
+           margin: 140px;
+           left: -400px;
+           flex-basis: 20%;
+
+
+       }
+
+        .child3{
+            position: absolute;
+            top: 310px;
+            left: 900px;
+            flex-basis: 20%;
+            }
+            .child4{
+                 flex-basis: 20%;
+            }
+            #img1{
+                
+                border-radius: 50px;
+                top: 610px;
+                left: -380px;
+                height: 50px;
+                width: 50px;
+                filter: grayscale(50%)
+                
+             }
+             #img2{
+                border-radius: 50px;
+                  top: 610px;
+                left: -360px;
+                height: 50px;
+                width: 50px;
+             }
+             #img3{
+                border-radius: 50px;
+                top: 610px;
+                left: -340px;
+                height: 50px;
+                width: 50px;
+             
+   @media only screen and (max-width:800px){
+    .parent{
+        flex-direction: column;
+        width: 600px;
+        height: 300px;
+        flex: basis 40;
+    }
+   }
+
+ </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">
+    
+    <Header class="head"><h1>Huddle</h1></Header>
+  </div>
+    <div class="child2">
+
+        <img src="../media/illustration-mockups.svg" alt="design">
+    </div>
+    <div class="child3">
+    
+        <h2 class="h2">Build the Community  Your Fans will Love</h2>
+        <p>Huddle re-images the way we build communities.You have a voice,but so does your audience.Create connections with your users as you engage in genuine discussion.</p>
+        <button class="button">Register</button>
+    </div>
+    <div class="child4">
+    
+        <footer>
+            <img id="img1" src="../media/fblogo1.png" alt="fb" id="img">
+            <img id="img2" src="../media/twitter.logo.jpg" alt="twitter" id="img">
+            <img id="img3" src="../media/instagram.logo.jpg" alt="instagram" id="img">
+        </footer>
+</div>
+</div>
+   
+</body>
+</html>
